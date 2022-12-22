@@ -19,14 +19,17 @@
     </div>
 
     <div class="mb-2 flex justify-end">
-        <!-- Comes code   -->
+        <!-- Comes code filterPost component  -->
+        <livewire:filter-date/>
     </div>
 
     <div class="mb-10">
-        <!-- Comes code   -->
+        <!-- Comes code   Showpost Component-->
+        <livewire:show-posts/>
     </div>
 
     </div>
+
     @livewireScripts()
 </body>
 </html>
