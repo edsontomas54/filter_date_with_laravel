@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\category;
+use App\Models\Post;
+
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -20,5 +23,10 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        category::factory()
+        ->has(Post::factory()->count(count:3))
+        ->count(count:5)->create();
+
     }
 }
